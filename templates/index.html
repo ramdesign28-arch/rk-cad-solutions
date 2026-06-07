@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RK CAD Solutions</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        RK CAD Solutions
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Professional AutoCAD & SolidWorks Design Services
+        </h1>
+
+        <p>
+            Mechanical Drawings, 3D CAD Models, Sheet Metal Design,
+            Manufacturing Drawings and Engineering Support.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#contact" class="btn">
+                Get Free Quote
+            </a>
+
+            <a href="https://wa.me/91XXXXXXXXXX"
+               class="btn whatsapp-btn">
+                WhatsApp Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>AutoCAD Drafting</h3>
+<p>
+Mechanical, Manufacturing and Fabrication Drawings
+</p>
+</div>
+
+<div class="card">
+<h3>SolidWorks Design</h3>
+<p>
+3D Parts, Assemblies and Sheet Metal Components
+</p>
+</div>
+
+<div class="card">
+<h3>PDF to DWG</h3>
+<p>
+Convert PDF drawings into editable CAD files
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>Send Your Project</h2>
+
+    <p>
+        Upload your drawing and get a quotation within 24 hours.
+    </p>
+
+    <form action="/upload"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Your Email"
+               required>
+
+        <textarea
+                name="details"
+                placeholder="Describe your project..."
+                rows="5"></textarea>
+
+        <input type="file"
+               name="file"
+               accept=".pdf,.dwg,.dxf,.step,.stp"
+               required>
+
+        <button type="submit">
+            Send Project
+        </button>
+
+    </form>
+
+</section>
+
+<a href="https://wa.me/918770573129"
+class="floating-whatsapp">
+WhatsApp
+</a>
+
+<footer>
+© 2026 RK CAD Solutions
+</footer>
+
+</body>
+</html>
