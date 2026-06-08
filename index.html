@@ -16,35 +16,25 @@
     </div>
 
     <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+    <section id="home">
+    <section id="services">
+    <section id="portfolio">
+    <section id="contact">
 </nav>
+<header>
+    <div class="logo">
+        AxisCAD Engineering
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section id="home">
-    <h1>Welcome to AxisCAD Engineering</h1>
-    <p>Professional CAD Drafting and Engineering Drawing Services.</p>
-</section>
-
-<section id="services">
-    <h2>Services</h2>
-    <p>2D Drafting, PDF to DWG Conversion, Manufacturing Drawings, Layout Drawings.</p>
-</section>
-
-<section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>View our CAD and engineering projects.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your-ramdesign28@gmail.com</p>
-</section>    
-    
-
-<section class="hero">
+<section id="home" class="hero">
 
     <div class="hero-content">
 
@@ -74,75 +64,74 @@
 
 </section>
 
-<section class="services">
+<section id="services" class="services">
 
-<h2>Our Services</h2>
+    <h2>Our Services</h2>
 
-<div class="cards">
+    <div class="cards">
 
-<div class="card">
-<h3>AutoCAD Drafting</h3>
-<p>
-Mechanical, Manufacturing and Fabrication Drawings
-</p>
-</div>
+        <div class="card">
+            <h3>AutoCAD Drafting</h3>
+            <p>
+                Mechanical, Manufacturing and Fabrication Drawings
+            </p>
+        </div>
 
-<div class="card">
-<h3>SolidWorks Design</h3>
-<p>
-3D Parts, Assemblies and Sheet Metal Components
-</p>
-</div>
+        <div class="card">
+            <h3>SolidWorks Design</h3>
+            <p>
+                3D Parts, Assemblies and Sheet Metal Components
+            </p>
+        </div>
 
-<div class="card">
-<h3>PDF to DWG</h3>
-<p>
-Convert PDF drawings into editable CAD files
-</p>
-</div>
+        <div class="card">
+            <h3>PDF to DWG Conversion</h3>
+            <p>
+                Convert PDF drawings into editable CAD files
+            </p>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
+<section id="portfolio">
 
-<section class="contact" id="contact">
-
-    <h2>Send Your Project</h2>
+    <h2>Portfolio</h2>
 
     <p>
-        Upload your drawing and get a quotation within 24 hours.
+        Mechanical Drawings, Manufacturing Drawings,
+        CAD Drafting Projects and 3D Models.
     </p>
 
-    <form action="/upload"
-          method="POST"
-          enctype="multipart/form-data">
+</section>
 
-        <input type="text"
-               name="name"
-               placeholder="Your Name"
-               required>
+<section id="contact" class="contact">
 
-        <input type="email"
-               name="email"
-               placeholder="Your Email"
-               required>
+    <h2>Contact Us</h2>
 
-        <textarea
-                name="details"
-                placeholder="Describe your project..."
-                rows="5"></textarea>
+    <p>
+        Need CAD drafting or engineering design support?
+    </p>
 
-        <input type="file"
-               name="file"
-               accept=".pdf,.dwg,.dxf,.step,.stp"
-               required>
+    <p>
+        Email:
+        <a href="mailto:ramdesign28@gmail.com">
+            ramdesign28@gmail.com
+        </a>
+    </p>
 
-        <button type="submit">
-            Send Project
-        </button>
+    <p>
+        WhatsApp:
+        <a href="https://wa.me/918770573129">
+            +91 87705 73129
+        </a>
+    </p>
 
-    </form>
+    <a href="https://wa.me/918770573129"
+       class="btn whatsapp-btn">
+        Send Project on WhatsApp
+    </a>
 
 </section>
 
@@ -152,7 +141,7 @@ WhatsApp
 </a>
 
 <footer>
-© 2026 RK CAD Solutions
+© 2026 AxisCAD Engineering
 </footer>
 
 </body>
